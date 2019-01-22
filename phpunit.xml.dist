@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="./src/autoloader.php" colors="true">
+    <testsuite name="default">
+        <directory>test</directory>
+    </testsuite>
+</phpunit>

@@ -1,0 +1,9 @@
+{
+    "require": {
+	"php": "^7.1",
+        "tuupola/base58": "^0.2.3",
+        "phpunit/phpunit": "^7.5"
+    },
+    "require-dev": {
+    }
+}

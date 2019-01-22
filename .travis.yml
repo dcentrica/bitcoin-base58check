@@ -1,0 +1,23 @@
+dist: xenial
+
+language: php
+
+php:
+  - 7.1
+  - 7.2
+  - 7.3
+
+before_script:
+  # Init PHP
+  - composer self-update || true
+  - phpenv rehash
+  - phpenv config-rm xdebug.ini
+  - composer install --prefer-dist --no-interaction --no-progress --no-suggest --optimize-autoloader --verbose --profile
+
+script:
+  - phpunit --testsuite default
+
+branches:
+  only: 
+    - master
+
